@@ -21,5 +21,6 @@
 `php artisan serve` (運行)<br/>
 
 ## XAMPP 環境下的 api
-- `http://127.0.0.1/addressbook-laravel/public/api/contacts`
-- `http://127.0.0.1/addressbook-laravel/public/api/contacts/{id}`
+- 將 *htdocs* 內的專案資料夾名稱改為 **addressbook-laravel**
+- 顯示所有連絡人`http://127.0.0.1/addressbook-laravel/public/api/contacts`
+- 顯示單一連絡人`http://127.0.0.1/addressbook-laravel/public/api/contacts/{id}`
