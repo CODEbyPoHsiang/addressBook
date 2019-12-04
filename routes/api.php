@@ -22,3 +22,8 @@ Route::get('contacts/{id}', 'ContactController@show');
 Route::post('contactsadd', 'ContactController@store');
 Route::put('contactsmodify/{id}', 'ContactController@update');
 Route::delete('contactsdel/{id}', 'ContactController@destroy');
+
+
+//頭像上傳
+Route::get('image-upload', 'ImageUploadController@imageUpload')->name('image.upload');
+Route::post('image-upload', 'ImageUploadController@imageUploadPost')->name('image.upload.post');
