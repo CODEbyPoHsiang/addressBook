@@ -31,6 +31,30 @@ public function update(Request $request, $id)
     return response()->json(['修改資料成功'], 200);
 }
 
+public function imageUploadPost(Request $request)
+
+    {
+
+        request()->validate([
+
+            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+
+        ]);
+
+
+        $imageName = time().'.'.request()->image->getClientOriginalExtension();
+
+       
+        request()->image->move(public_path('upload'), $imageName);
+
+        Contact::create($request->all());
+
+      return response()->json(['你已成功上傳頭像'], 200);
+
+           
+
+    }
+
 public function destroy($id)
 {
     Contact::find($id)->delete();

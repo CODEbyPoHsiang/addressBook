@@ -26,5 +26,4 @@ Route::delete('contactsdel/{id}', 'ContactController@destroy');
 
 
 //頭像上傳
-Route::get('image-upload', 'ImageUploadController@imageUpload')->name('image.upload');
-Route::post('image-upload', 'ImageUploadController@imageUploadPost')->name('image.upload.post');
+Route::post('contactsimg', 'ContactController@imageUploadPost')->name('image.upload.post');
