@@ -18,7 +18,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'mayday@gmail.com',
                 'Phone' => '0919055666',
                 'Address' => '台北市大安區市政路1號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/1.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/1.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '周',
@@ -26,7 +26,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'jay666@hotmail.com',
                 'Phone' => '0919000666',
                 'Address' => '新北市中正區中正路1號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/2.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/2.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '王',
@@ -34,7 +34,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'wang40@gmail.com',
                 'Phone' => '0988000666',
                 'Address' => '新竹縣中區中山路12號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/3.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/3.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '蔡',
@@ -42,7 +42,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'jolin888@hotmail.com',
                 'Phone' => '0912333666',
                 'Address' => '台中市西屯區朝馬路1號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/4.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/4.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '吳',
@@ -50,7 +50,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'jacky999@hotmail.com',
                 'Phone' => '0912333666',
                 'Address' => '台北市內湖區舊宗路1號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/5.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/5.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '林',
@@ -58,7 +58,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => '96jay@gmail.com',
                 'Phone' => '0919888666',
                 'Address' => '高雄市苓雅區中正路14號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/6.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/6.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '李',
@@ -66,7 +66,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'mang@hotmail.com',
                 'Phone' => '0933000776',
                 'Address' => '南投縣埔里正中山路一段3號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/7.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/7.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '徐',
@@ -74,7 +74,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'fuhsu@gmail.com',
                 'Phone' => '0912060556',
                 'Address' => '台南市西區中山路2號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/8.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/8.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '顏',
@@ -82,7 +82,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'yan@hotmail.com',
                 'Phone' => '0912033666',
                 'Address' => '台中市大甲區中山路1號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/9.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/9.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '羅',
@@ -90,7 +90,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'lojay@hotmail.com',
                 'Phone' => '0919888656',
                 'Address' => '苗栗縣中區中山路1號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/10.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/10.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '葉',
@@ -98,7 +98,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'yatin@hotmail.com',
                 'Phone' => '0988666556',
                 'Address' => '台東縣東區東義路1號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/1.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/11.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '謝',
@@ -106,7 +106,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'jaytt@hotmail.com',
                 'Phone' => '0918000666',
                 'Address' => '嘉義市東區中山路14號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/2.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/12.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '黃',
@@ -114,7 +114,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'haung@hotmail.com',
                 'Phone' => '0933665566',
                 'Address' => '新竹縣中區中正路1號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/3.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/13.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '劉',
@@ -122,7 +122,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'laulon@hotmail.com',
                 'Phone' => '0972333666',
                 'Address' => '宜蘭縣西區復興路1號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/4.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/14.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '張',
@@ -130,7 +130,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'smart@hotmail.com',
                 'Phone' => '0933667666',
                 'Address' => '屏東縣東區東門路2號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/5.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/15.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '李',
@@ -138,7 +138,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'lifu@hotmail.com',
                 'Phone' => '0933667666',
                 'Address' => '雲林縣麥寮鄉中山路1號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/6.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/16.jpg',
             ]);
             DB::table('contacts')->insert([
                 'Fname' => '曹',
@@ -146,7 +146,7 @@ class ContactTableSeeder extends Seeder
                 'Email' => 'tsao@hotmail.com',
                 'Phone' => '0988665666',
                 'Address' => '嘉義縣民雄鄉建國路2號',
-                'ImgPath' => 'http://127.0.0.1:8000/images/7.jpg',
+                'ImgPath' => 'http://127.0.0.1/images/17.jpg',
             ]);
         }
     }
