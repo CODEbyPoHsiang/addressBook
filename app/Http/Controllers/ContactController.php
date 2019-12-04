@@ -34,19 +34,26 @@ public function update(Request $request, $id)
 public function imageUploadPost(Request $request)
 
     {
-
         request()->validate([
-
-            'image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-
+            'ImgPath' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
+    
+        $extension = request()->ImgPath->getClientOriginalExtension(); //副檔名
+        $imageName = time() . "." . $extension;    //重新命名
+        
+        
+        $path=request()->ImgPath->move(public_path().'/uploads', $imageName); //移動至指定目錄
+
+        // if(isset($_FILES['ImgPath'])){ //如果表單夾帶檔案送出的話
+        //     $filename = $_FILES['ImgPath']['name']; //抓出檔案的名字
+        //     $tmp_name = $_FILES['ImgPath']['tmp_name'];//抓出檔案的站存名稱
+        //     move_uploaded_file($tmp_name, "upload/$filename");//移動檔案到upload資料夾	
+        // }
 
 
-        $imageName = time().'.'.request()->image->getClientOriginalExtension();
-
-       
-        request()->image->move(public_path('upload'), $imageName);
-
+        // $imageName = time().'.'.request()->ImgPath->getClientOriginalExtension();       
+        // request()->ImgPath->move(public_path('upload'), $imageName);
+        
         Contact::create($request->all());
 
       return response()->json(['你已成功上傳頭像'], 200);
@@ -54,6 +61,15 @@ public function imageUploadPost(Request $request)
            
 
     }
+    
+    // public function getImageUrlAttribute()
+    // {
+    //     // 如果 image 字段本身就已经是完整的 url 就直接返回
+    //     if (Str::startsWith($this->attributes['ImgPath'])) {
+    //         return $this->attributes['ImgPath'];
+    //     }
+    //     return \Storage::disk('public\upload')->url($this->attributes['ImgPath']);
+    // }
 
 public function destroy($id)
 {
