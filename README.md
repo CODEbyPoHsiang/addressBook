@@ -9,7 +9,7 @@ cp .env.example .env<br/>
 
 在 phpmyadmin 手動建立同名資料庫或另用DB指令新增<br/>
 "# phpmyadmin create database, only doing once" <br/>
-DB name:marathon select:utf8mb4_unicode_ci mysql -u root -p <br/>
+DB name:addressbook select:utf8mb4_unicode_ci mysql -u root -p <br/>
 --> create database if not exists marathon default character set utf8mb4 collate utf8mb4_unicode_ci; <br/>
 --> exit<br/>
 
