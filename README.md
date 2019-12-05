@@ -1,7 +1,7 @@
 # addressbook laravel api
 
 ## bash下指令:<br/>
-`git clone https://github.com/CODEbyPoHsiang/addressbook`
+`git clone https://github.com/CODEbyPoHsiang/addressbook` <br/>
 `cd addressbook`<br/> 
 `composer install --no-plugins --no-scripts`<br/>
 `cp .env.example .env`<br/>
