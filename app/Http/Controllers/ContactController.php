@@ -50,7 +50,7 @@ public function imageUploadPost(Request $request)
         ]);
         $extension = request()->ImgPath->getClientOriginalExtension(); 
         $imageName = time() . "." . $extension;    
-        $img1path = request()->ImgPath->move(('images'), $imageName);
+        $img1path = request()->ImgPath->move(('../../images/'), $imageName);
 
         Contact::insert(
             [
