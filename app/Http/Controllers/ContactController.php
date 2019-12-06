@@ -49,12 +49,13 @@ public function imageUploadPost(Request $request)
             'ImgPath' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
         $extension = request()->ImgPath->getClientOriginalExtension(); 
+        $imageReal = request()->ImgPath->getClientOriginalName();
         $imageName = time() . "." . $extension;    
         $img1path = request()->ImgPath->move(('../../images/'), $imageName);
-
+        $img1_name = "." . "." . "/" . "images" . "/" . $imageReal;
         Contact::insert(
             [
-                 'ImgPath' =>  $img1path,
+                 'ImgPath' =>  $img1_name,
             ]
         );
 
