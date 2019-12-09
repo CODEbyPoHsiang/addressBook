@@ -23,19 +23,26 @@ class ContactController extends Controller
 
 public function store(Request $request)
 {
-    // request()->validate([
-    //     'ImgPath' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-    // ]);
-    // $extension = request()->ImgPath->getClientOriginalExtension(); 
-    // $imageName = time() . "." . $extension;    
-    // request()->ImgPath->move(public_path('images'), $imageName);
+    request()->validate([
+        'ImgPath' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+    ]);
+    $extension = request()->ImgPath->getClientOriginalExtension(); 
+    $imageReal = request()->ImgPath->getClientOriginalName();
+    $imageName = time() . "." . $extension;    
+    $img1path = request()->ImgPath->move(('../../images/'), $imageName);
+    $img1_name = "." . "." . "/" . "images" . "/" . $imageReal;
+    Contact::insert(
+        [
+             'ImgPath' =>  $img1_name,
+        ]
+    );
     
     Contact::create($request->all());
 
     return response()->json(['新增資料成功'], 200);
 }
 
-public function update(Request $request, $ID)
+public function update(Request $request, $id)
 {
     Contact::find($id)->update($request->all());
 
